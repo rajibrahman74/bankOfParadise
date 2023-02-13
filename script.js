@@ -11,7 +11,9 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   const getPassword = passwordField.value;
 
   // verified email and password
-  if (getEmail === "rajiburrahman74@gmail.com" && getPassword === "rajib's") {
-    console.log("hello rajib suhana");
+  if (getEmail === "1" && getPassword === "2") {
+    window.location.href = ("/bank.html");
+  } else {
+    alert("please enter valid email or password!")
   }
 });

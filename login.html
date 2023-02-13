@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Like a bank</title>
+    <title>Login - Bank fo paradies</title>
     <!-- 
         Tailwind cdn link associated with html
      -->
@@ -13,27 +13,33 @@
 </head>
 
 <body>
+    <header>
+        <h1 class="text-4xl text-blue-700 text-center mt-16 mb-6">Welcome to <span class="font-bold text-blue-800">Bank
+                of paradies</span></h1>
+    </header>
 
-    <h1 class="text-4xl text-blue-700 text-center mt-16 mb-6">Welcome to a <span class="font-bold text-blue-800">Simple
-            Bank</span></h1>
-
-    <section class="bg-blue-200 w-1/2 mt-16 p-8 mx-auto rounded-md">
-        <h3 class="text-3xl mb-5 text-center text-blue-700">Please <span class="text-blue-800 font-bold">Login</span>
-        </h3>
-        <div class="mx-auto flex flex-col">
-            <input id="user-email" class="w-1/2 mb-5 p-2 rounded-md mx-auto" type="text" placeholder="Your email..">
-            <input id="user-password" class="w-1/2 mb-5 p-2 rounded-md mx-auto" type="password" placeholder="Your password..">
-        </div>
-        <span class="flex">
-            <button id="submit-btn" class="py-1.5 px-5 text-lg mx-auto font-bold bg-blue-600 rounded-md text-white hover:bg-blue-900">Submit</button>
-        </span>
-    </section>
+    <main>
+        <section class="bg-blue-200 w-1/2 mt-16 p-8 mx-auto rounded-lg">
+            <h3 class="text-3xl mb-5 text-center text-blue-700">Please <span
+                    class="text-blue-800 font-bold">Login</span>
+            </h3>
+            <div class="mx-auto flex flex-col">
+                <input id="user-email" class="w-1/2 mb-5 p-2 rounded-lg mx-auto" type="text" placeholder="Your email..">
+                <input id="user-password" class="w-1/2 mb-5 p-2 rounded-lg mx-auto" type="password"
+                    placeholder="Your password..">
+            </div>
+            <span class="flex">
+                <button id="submit-btn"
+                    class="py-1.5 px-5 text-lg mx-auto font-bold bg-blue-600 rounded-lg text-white hover:bg-blue-900">Submit</button>
+            </span>
+        </section>
+    </main>
 
 
     <!-- 
         JS file is associated with html
      -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
