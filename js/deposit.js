@@ -5,9 +5,6 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
   const depositField = document.getElementById("deposit-field");
   const newDepositAmountString = depositField.value;
   const newDepositAmount = parseFloat(newDepositAmountString);
-  if (newDepositAmount < 0) {
-    alert("Please add positive number");
-  }
 
   // get the current deposit total amount
   // for non-input (element other than input, textarea) use  inner text to get the text

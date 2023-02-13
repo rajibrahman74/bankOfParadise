@@ -6,11 +6,6 @@ document.getElementById("whitdraw-btn").addEventListener("click", function () {
   const newWithdrawAmountString = withdrawField.value;
   const newWithdrawAmount = parseFloat(newWithdrawAmountString);
 
-  if (newWithdrawAmount < 0 ) {
-    alert('Please enter positive numbers')
-  }
-
-
   // get the current withdraw total amount
   // for non-input (element other than input, textarea) use  inner text to get the text
   const currentWithdrawTotal = document.getElementById("whitdraw-total");
@@ -30,7 +25,6 @@ document.getElementById("whitdraw-btn").addEventListener("click", function () {
   // substraction numbers set the total balance
   const newBalance = newBalanceTotal - newWithdrawAmount;
   currentBalance.innerText = newBalance;
-
 
   // clear the withdraw field
   withdrawField.value = "";
