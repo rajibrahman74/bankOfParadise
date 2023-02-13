@@ -18,7 +18,7 @@
                 class="font-bold text-blue-800">Pengaaar</span></h1>
     </header>
 
-    <main>
+    <main class="mb-16">
         <section>
             <!-- 
                 Ammount calculate 
@@ -26,43 +26,51 @@
             <div class="grid grid-cols-3 gap-12 w-9/12 mx-auto mt-12">
                 <div class="bg-cyan-100 p-8 flex flex-col gap-y-6 items-center rounded-lg">
                     <h4 class="text-blue-800 text-3xl font-bold">DEPOSIT</h4>
-                    <h2 class="text-blue-600 text-5xl ">&#8355;00</h2>
+                    <h2 id="deposit-amount" class="text-blue-600 text-5xl ">&#8355;00</h2>
                 </div>
 
                 <div class="bg-blue-100 p-8 flex flex-col gap-y-6 items-center rounded-lg">
                     <h4 class="text-blue-800 text-3xl font-bold">WHITDRAW</h4>
-                    <h2 class="text-blue-600 text-5xl ">&#8355;00</h2>
+                    <h2 id="whitdraw-amoutn" class="text-blue-600 text-5xl ">&#8355;00</h2>
                 </div>
 
                 <div class="bg-orange-100 p-8 flex flex-col gap-y-6 items-center rounded-lg">
                     <h4 class="text-blue-800 text-3xl font-bold">BALANCE</h4>
-                    <h2 class="text-blue-600 text-5xl ">&#8355;1200</h2>
+                    <h2 id="balance-amount" class="text-blue-600 text-5xl ">&#8355;1200</h2>
                 </div>
             </div>
 
             <!-- 
-                Amount add and whitdrew field
+                Amount add and whitdraw field
              -->
             <div class="grid grid-cols-2 gap-12 w-9/12 mx-auto mt-12">
                 <div class="bg-orange-100 p-10 rounded-lg">
                     <h4 class="text-blue-800 text-2xl text-center font-bold">Add your deposit here</h4>
                     <div class="flex flex-col justify-center items-center gap-4 mt-6">
-                        <input class="w-2/3 p-2 rounded-lg" type="text" placeholder="&#8355; Amount you want to deposit">
-                        <button class="py-1.5 px-5 text-lg mx-auto font-bold bg-blue-700 rounded-lg text-white hover:bg-blue-900">Deposit</button>
+                        <input id="deposit-field" class="w-2/3 p-2 rounded-lg" type="text"
+                            placeholder="&#8355; Amount you want to deposit">
+                        <button id="deposit-btn"
+                            class="py-1.5 px-5 text-lg mx-auto font-bold bg-blue-700 rounded-lg text-white hover:bg-blue-900">Deposit</button>
                     </div>
                 </div>
 
                 <div class="bg-cyan-100 p-10 rounded-lg">
                     <h4 class="text-blue-800 text-2xl text-center font-bold">Withdraw your money here</h4>
                     <div class="flex flex-col justify-center items-center gap-4 mt-6">
-                        <input class="w-2/3 p-2 rounded-lg" type="text" placeholder="&#8355; Amount you want to withdraw">
-                        <button class="py-1.5 px-5 text-lg mx-auto font-bold bg-blue-700 rounded-lg text-white hover:bg-blue-900">Whitdraw</button>
+                        <input id="whitdraw-field" class="w-2/3 p-2 rounded-lg" type="text"
+                            placeholder="&#8355; Amount you want to withdraw">
+                        <button id="whitdraw-btn"
+                            class="py-1.5 px-5 text-lg mx-auto font-bold bg-blue-700 rounded-lg text-white hover:bg-blue-900">Whitdraw</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- 
+        JS file is associated with html
+     -->
+    <script src="js/bank.js"></script>
 </body>
 
 </html>
